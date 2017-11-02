@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">job1</string>
+    <string name="title_name">登录</string>
+    <string name="login_img_desc">This is a picture for login</string>
+    <string name="username_hint">请输入用户名</string>
+    <string name="pwd_hint">请输入密码</string>
+    <string name="quit">退出</string>
+    <string name="login">登录</string>
+    <string name="welcome">欢迎您，</string>
+    <string name="song_cover_desc">This is a picture for song</string>
+    <string name="qmnlg">奇妙能力歌</string>
+    <string name="cl">陈粒</string>
+</resources>

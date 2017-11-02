@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_view_vertical_margin">10dp</dimen>
+    <dimen name="edittext_horizontal_margin">20dp</dimen>
+    <dimen name="edittext_vertical_margin">10dp</dimen>
+    <dimen name="bar_horizontal_margin">10dp</dimen>
+    <dimen name="song_information_horizontal_margin">10dp</dimen>
+    <dimen name="song_information_vertical_margin">10dp</dimen>
+</resources>

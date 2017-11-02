@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/song_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/song_information_vertical_margin"
+        android:layout_marginBottom="@dimen/song_information_vertical_margin"
+        android:layout_marginStart="@dimen/song_information_horizontal_margin"
+        android:contentDescription="@string/song_cover_desc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/song_information_vertical_margin"
+        android:layout_marginBottom="@dimen/song_information_vertical_margin">
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/song_information_horizontal_margin"
+            android:textColor="@color/colorDark"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/singer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/song_name"
+            android:layout_marginTop="@dimen/song_information_vertical_margin"
+            android:layout_marginStart="@dimen/song_information_horizontal_margin"
+            android:textColor="@color/colorGray"
+            android:textSize="17sp"/>
+    </RelativeLayout>
+</LinearLayout>

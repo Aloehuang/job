@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    tools:context=".LoginActivity">
+
+<!--    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/title_name"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>-->
+
+    <ImageView
+        android:id="@+id/img_login_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/login_view_vertical_margin"
+        android:layout_marginTop="@dimen/login_view_vertical_margin"
+        android:src="@drawable/login"
+        android:contentDescription="@string/login_img_desc" />
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorDark"
+        android:layout_marginLeft="@dimen/edittext_horizontal_margin"
+        android:layout_marginRight="@dimen/edittext_horizontal_margin"
+        android:inputType="text"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:hint="@string/username_hint"
+        android:textColorHint="@color/colorHint"/>
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edittext_vertical_margin"
+        android:layout_marginLeft="@dimen/edittext_horizontal_margin"
+        android:layout_marginRight="@dimen/edittext_horizontal_margin"
+        android:hint="@string/pwd_hint"
+        android:inputType="numberPassword"
+        android:textColor="@color/colorDark"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:textColorHint="@color/colorHint" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+
+        <!--下面两个Button字体大小可自行调整。这里大家思考一下为什么在水平线性布局里
+        要用两个layout_weight相同的垂直线性布局分别包含两个按钮，
+        如果去掉这两个垂直线性布局有什么影响？有没有其他的方案可以实现相同的效果？-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_quit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDark"
+                android:background="@drawable/shape"
+                android:layout_gravity="center"
+                android:text="@string/quit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:textColor="@color/colorDark"
+                android:layout_gravity="center"
+                android:text="@string/login" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
